@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.loginContainer,
+.regContainer {
+  width: 60%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .output {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  gap: 10px;
+}
+.moviecard {
+  box-shadow: rgb(170 170 170) 0px 3px 10px 0px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  object-fit: cover;
+  height: 362px;
+}
+.title {
+  margin-left: 10px;
+  text-align: left;
+  white-space: nowrap;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ */
+
+
+
+
+.mvie {
+  box-shadow: rgb(170 170 170) 0px 3px 10px 0px;
+  cursor: pointer;
+  width: 40vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  object-fit:cover;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.constimner {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cover {
+  padding: 0;
+  margin: 0;
+  object-fit: fill;
+}
+
+span {
+  margin: 6px;
+}
+.detailes{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 10px;
+}
+.year{
+font-size: 13px;
+
+}
+.title{
+  font-size: 16px;
+  font-weight: 700;
+}
+.title,.year{
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  width: 40vh;
+  height: 43vh;
 }
